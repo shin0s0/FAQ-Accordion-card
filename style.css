@@ -118,7 +118,6 @@ hr{
     flex-direction: column;
     width: 90%;
     min-height:80vh;
-    justify-content:end;
     top:20px;
     margin: 0 auto;
     
@@ -139,7 +138,7 @@ hr{
     height:130px;
     width:200px;
     z-index: 1;
-    top:5px;
+    top:15px;
     
   }
   #m-bg{
@@ -147,7 +146,7 @@ hr{
     position: absolute;
     height:90px;
     width:210px;
-    top:70px;
+    top:90px;
     z-index: 2;
   }
   #over-bg {
