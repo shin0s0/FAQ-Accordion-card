@@ -120,17 +120,15 @@ hr{
     min-height:80vh;
     top:20px;
     margin: 0 auto;
-    
+    justify-content:space-evenly:
   }
   
   .right {
     width: 100%;
     margin-bottom:20px;
-    text-align:center;
+    margin:auto;
   }
- .faq{
-   text-align:center;
- }
+
   #overlay {
     display: none;
   }
