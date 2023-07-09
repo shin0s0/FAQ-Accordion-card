@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQ accordion card</title>
+        <link rel="stylesheet" href="faq.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="/images/illustration-box-desktop.svg" alt="box" id="box">
+            <img src="/images/illustration-woman-online-mobile.svg" alt="m-illus" id="mb-ill"> 
+            <img src="/images/bg-pattern-mobile.svg" alt="background-image" id="m-bg">
+        <div class="centered">
+            <div class="left">
+                <img src="/images/bg-pattern-desktop.svg" alt="background-image" id="over-bg">
+                <img src="/images/illustration-woman-online-desktop.svg" alt="women-illustration" id="overlay">
+        
+            </div>
+            <div class="right">
+                <h1>FAQ</h1>
+                <div class="faq">
+                    <div class="faq-question" onclick="toggleAnswer(1)" id="q1">How many team members can I invite? <img src="/images/icon-arrow-down.svg" class="arrow" id="a1"></div>
+                    <div class="faq-answer" id="answer1">You can invite up to 2 additional users on the Free plan.
+                         There is no limit on team members for the Premium plan.</div>
+                    <hr>
+                    <div class="faq-question" onclick="toggleAnswer(2)"  id="q2">What is the maximum file upload size? <img src="/images/icon-arrow-down.svg"  class="arrow" id="a2"></div>
+                    <div class="faq-answer" id="answer2">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+                    <hr>
+                    <div class="faq-question" onclick="toggleAnswer(3)" id="q3">How do I reset my password?<img src="/images/icon-arrow-down.svg"  class="arrow" id="a3"></div>
+                    <div class="faq-answer" id="answer3">Click “Forgot password” from the login page or “Change password” from your profile page.
+                        A reset link will be emailed to you.</div>
+                    <hr>
+                    <div class="faq-question" onclick="toggleAnswer(4)" id="q4">Can I cancel my subscription?<img src="/images/icon-arrow-down.svg"  class="arrow" id="a4"></div>
+                    <div class="faq-answer" id="answer4">Yes! Send us a message and we’ll process your request no questions asked.</div>
+                    <hr>
+                    <div class="faq-question" onclick="toggleAnswer(5)" id="q5">Do you provide additional support?<img src="/images/icon-arrow-down.svg"  class="arrow" id="a5"></div>
+                    <div class="faq-answer" id="answer5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="faq.js"></script>
+</html>

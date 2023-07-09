@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-shadow: 0 0 20px 0 #00000069;
+}
+
+.centered {
+  width: 62%;
+  height: 67vh;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0px 20px 1px #00000069;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.left {
+  width: 55%;
+}
+
+#overlay {
+  position: absolute;
+  top: 100px;
+  left: -70px;
+}
+
+#over-bg {
+  height: 60vh;
+  width: 550px;
+  position: absolute;
+  top: 70px;
+  left: -90px;
+}
+
+#box {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  z-index: 1;
+}
+
+.right {
+  margin-top: 40px;
+  width: 50%;
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.faq-question,
+.faq-answer {
+  cursor: pointer;
+  padding: 10px 0 15px;
+}
+
+.faq-question:hover {
+  color: hsl(14, 88%, 65%);
+}
+.faq-question.clicked{
+    font-weight: bold;
+}
+.faq-answer {
+  display: none;
+}
+
+.bold-question {
+  font-weight: bold;
+}
+hr{
+    background-color:hsl(240, 6%, 69%);
+    width:100%;
+   
+}
+#mb-ill,#m-bg{
+    display: none;
+}
+.arrow {
+      transition: transform 0.3s;
+         
+ }
+.arrow.clicked {
+      transform: rotate(180deg);
+}
+@media only screen and (max-width: 720px) {
+  .container {
+    min-height: 100vh;
+    padding: 20px;
+   
+  }
+  
+  .centered {
+    flex-direction: column;
+    width: 90%;
+    min-height:80vh;
+    justify-content:end;
+    top:20px;
+    margin: 0 auto;
+    
+  }
+  
+  .right {
+    width: 100%;
+    margin-bottom:20px;
+  }
+ 
+  #overlay {
+    display: none;
+  }
+  
+  #mb-ill{
+    display: block;
+    position: absolute;
+    height:130px;
+    width:200px;
+    z-index: 1;
+    top:5px;
+    
+  }
+  #m-bg{
+    display: block;
+    position: absolute;
+    height:90px;
+    width:210px;
+    top:70px;
+    z-index: 2;
+  }
+  #over-bg {
+    display: none;
+  }
+  
+ 
+  #box {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-left: 80px;
+  }
+  
+  .faq-question, .faq-answer {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+}
